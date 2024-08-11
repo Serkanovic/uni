@@ -1,4 +1,4 @@
-num = 142
+num = abs(int(input("Insira: ")))
 base2 = list()
 base2.insert(0,int(num % 2))
 while num > 2:
