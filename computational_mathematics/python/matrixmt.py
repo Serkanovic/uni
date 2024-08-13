@@ -9,11 +9,12 @@ print(B.shape)
 if A.shape[1] == B.shape[0]:
     print("É possível multiplicar")
     C = A @ B
-    C2 = np.zeros((1,3), dtype=int)
-    C2 = np.dot(A,B,C2)
-    print(C)
-    print(C2)
+    print(f"Pelo operador \"@\": {C}")
 else:
     print("Não é possível multiplicar")
 
 
+#numpy
+C2 = np.zeros((1,3), dtype=int)
+C2 = np.dot(A,B,C2)
+print(f"Pelo numpy: {C2}")
